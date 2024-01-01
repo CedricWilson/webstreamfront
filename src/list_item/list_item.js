@@ -4,7 +4,7 @@ import "font-awesome/css/font-awesome.min.css";
 import LazyImage from "./image_container";
 
 export default function ListItem(props) {
-  // let isImage = props.view === "long-grid";
+  
   let isImage = false;
 
   if (typeof props.item.file_path != "undefined" && props.item.file_path != "" && props.item.file_path.includes(".jpg")) {

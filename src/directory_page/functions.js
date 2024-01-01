@@ -20,3 +20,14 @@ export function getPath(path) {
   });
   return p;
 }
+
+export function getPath2(window) {
+  const queryParams = new URLSearchParams(window.location.search);
+
+  // Access the value of the 'param' parameter
+  var params = queryParams.get("path");
+  if (params === null){
+    return "";
+  }
+  return params;
+}
