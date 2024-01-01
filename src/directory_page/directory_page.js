@@ -19,7 +19,6 @@ export default function DirectoryPage() {
     let basePath = getServerAddress() + "/listings?dir=.";
     var p = getPath2(window);
     setPath(p);
-    console.log("Hit 1");
     basePath = basePath + "/" + p;
 
     console.log(basePath);
@@ -49,7 +48,7 @@ export default function DirectoryPage() {
 }
 
 function ListView(props) {
-  console.log("Hit 2 " + props.path);
+  
   if (props.list.length == 0) {
     return <div />;
   }
